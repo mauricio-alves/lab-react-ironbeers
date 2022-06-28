@@ -8,7 +8,7 @@ export function BeerList({ beers }) {
       {beers.map((currentBeer) => {
         return (
           <Link
-            to={`/${currentBeer._id}`}
+            to={`/beers/${currentBeer._id}`}
             style={{ textDecoration: "none", color: "black" }}
           >
             <div

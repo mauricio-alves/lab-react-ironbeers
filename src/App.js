@@ -6,6 +6,7 @@ import "./global.css";
 import { Home } from "./Pages/Home";
 import axios from "axios";
 import { RandomBeer } from "./components/RandomBeer";
+import { NewBeer } from "./components/NewBeer";
 
 export function App() {
   const [beers, setBeers] = useState([]);
@@ -44,8 +45,9 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/beers" element={<BeerList beers={beers} />} />
-        <Route path="/:id" element={<SingleBeer beers={beers} />} />
-        <Route path="/:random-beer" element={<RandomBeer beer={beer} />} />
+        <Route path="/beers/:beerId" element={<SingleBeer beers={beers} />} />
+        <Route path="/random-beer" element={<RandomBeer beer={beer} />} />
+        <Route path="/new-beer" element={<NewBeer />} />
       </Routes>
     </div>
   );

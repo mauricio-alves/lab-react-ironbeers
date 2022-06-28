@@ -48,13 +48,22 @@ export function Home() {
         </Link>
       </section>
       <section>
-        <img src={newBeer} alt="new beers" />
-        <h1>New Beer</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nisi
-          illo minus soluta vel, blanditiis eaque, quis iusto assumenda numquam
-          error unde cumque. Fuga cum itaque dignissimos omnis voluptatum nobis!
-        </p>
+        <Link
+          to={"/new-beer"}
+          style={{
+            textDecoration: "none",
+            color: "black",
+          }}
+        >
+          <img src={newBeer} alt="new beers" />
+          <h1>New Beer</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            nisi illo minus soluta vel, blanditiis eaque, quis iusto assumenda
+            numquam error unde cumque. Fuga cum itaque dignissimos omnis
+            voluptatum nobis!
+          </p>
+        </Link>
       </section>
     </div>
   );
