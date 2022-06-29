@@ -44,7 +44,10 @@ export function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/beers" element={<BeerList beers={beers} />} />
+        <Route
+          path="/beers"
+          element={<BeerList beers={beers} setBeers={setBeers} />}
+        />
         <Route path="/beers/:beerId" element={<SingleBeer beers={beers} />} />
         <Route path="/random-beer" element={<RandomBeer beer={beer} />} />
         <Route path="/new-beer" element={<NewBeer />} />

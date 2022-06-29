@@ -20,7 +20,7 @@ export function SingleBeer({ beers }) {
       }
     }
     fetchBeer();
-  }, []);
+  });
 
   return (
     <>
